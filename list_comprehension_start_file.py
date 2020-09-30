@@ -112,6 +112,9 @@ print(postives)
 sentence = "the quick brown fox jumps over the lazy dog"
 words = sentence.split()
 
+length = [len(i) for i in words if i != 'the']
+print(length)
+
 
 
 ## Given dictionary is consisted of vehicles and their weights in kilograms. 
@@ -120,3 +123,5 @@ words = sentence.split()
 
 dict={"Sedan": 1500, "SUV": 2000, "Pickup": 2500, "Minivan": 1600, "Van": 2400, 
 "Semi": 13600, "Bicycle": 7, "Motorcycle": 110}
+
+vehicles = [i.upper() for i in dict if dict[i]< 5000]
